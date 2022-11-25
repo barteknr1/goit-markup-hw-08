@@ -1,0 +1,22 @@
+.logo {
+
+    &__web {
+        font-family: "raleway", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--blue);
+        line-height: 1.17em;
+    }
+
+    &__studio {
+        font-family: "raleway", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        color: #000;
+        line-height: 1.17em;
+    }
+
+    &__studio--white {
+        color: var(--white);
+    }
+}

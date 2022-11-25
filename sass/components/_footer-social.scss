@@ -1,0 +1,11 @@
+.footer-social {
+    margin-left: 70px;
+
+
+    &__header {
+        text-transform: uppercase;
+        color: var(--white);
+        line-height: 1.14em;
+        margin-bottom: 20px;
+    }
+}

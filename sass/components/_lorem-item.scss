@@ -1,0 +1,19 @@
+.lorem-item {
+
+    &__icon {
+        background-color: var(--gray-background);
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
+
+    &__header {
+        color: inherit;
+        line-height: 1.14em;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        color: var(--lgray);
+        line-height: 1.71em;
+    }
+}

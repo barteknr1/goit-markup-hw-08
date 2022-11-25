@@ -1,0 +1,21 @@
+.address {
+    font-style: normal;
+    margin-top: 20px;
+
+
+    &__margin {
+        margin: 9px 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: var(--white);
+        line-height: 1.71em;
+        opacity: 60%;
+    }
+
+    &__place {
+        color: var(--white);
+        line-height: 1.71em;
+    }
+}
