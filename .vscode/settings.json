@@ -1,5 +1,5 @@
 {
-"liveSassCompile.settings.formats": [
+  "liveSassCompile.settings.formats": [
     {
       "extensionName": ".min.css",
       "format": "compressed",
@@ -10,5 +10,5 @@
     "/**/node_modules/**",
     "/.vscode/**"
   ],
-"liveSassCompile.settings.generateMap": true
+  "liveSassCompile.settings.generateMap": true
 }

@@ -3,17 +3,28 @@
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/index-background-image.jpg);
-    padding: 200px 0;
+    padding: 118px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+    }
 
     &__text {
         color: var(--white);
-        max-width: 696px;
+        max-width: 365px;
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36em;
+        font-size: 26px;
+        line-height: 1.61em;
         letter-spacing: 0.06em;
         text-align: center;
         margin-bottom: 30px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36em;
+            max-width: 696px;
+        }
+
     }
 
     &__button {

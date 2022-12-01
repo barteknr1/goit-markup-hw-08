@@ -1,4 +1,18 @@
 .lorem-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 30px;
-    margin-bottom: 94px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        margin-bottom: 94px;
+    }
+
+
 }

@@ -1,7 +1,17 @@
 .menu {
-    gap: 46px;
-    padding: 32px 0;
-    margin-left: 93px;
+
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 60px;
+        margin-left: 83px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        gap: 46px;
+        margin-left: 93px;
+    }
 
     &__link {
         color: inherit;
