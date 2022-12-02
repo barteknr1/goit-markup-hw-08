@@ -1,0 +1,23 @@
+.mobile-button {
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &__open {
+        border: none;
+        background: none;
+        padding: 0;
+        height: 40px;
+
+    }
+
+    &__icon {
+        fill: var(--dgray);
+
+        .mobile-button:hover &,
+        .mobile-button:focus & {
+            fill: var(--blue);
+        }
+    }
+}

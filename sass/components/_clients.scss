@@ -1,6 +1,8 @@
 .clients {
     display: flex;
     list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 
     &__link {
@@ -26,5 +28,15 @@
         gap: 30px;
         --color1: currentColor;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        width: 210px;
+        height: 92px;
+
+        @media screen and (min-width: 768px) {
+            width: 226px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 170px;
+        }
     }
 }

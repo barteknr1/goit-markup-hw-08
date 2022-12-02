@@ -19,6 +19,7 @@
     />
   </head>
   <body>
+
     <!-- ========================= HEADER ========================= -->
 
     <header class="border-bottom">
@@ -58,13 +59,57 @@
             >
           </li>
         </ul>
+        <div class="mobile-button">
+          <button class="mobile-button__open js-open-menu" type="button" aria-expanded="false"
+          aria-controls="mobile-menu">
+            <svg width="40" height="40">
+              <use class="mobile-button__icon" href="./images/icons.svg#icon-menu-open"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
     <!-- ========================= HEADER END ========================= -->
 
+    <!-- ========================= MOBILE MENU ========================= -->
+
+<!-- <div class="mobile-menu js-menu-container" id="mobile-menu">
+  <button class="mobile-menu__button">
+    <svg class="mobile-menu__toggle js-close-menu" width="40" height="40">
+      <use href="./images/icons.svg#icon-menu-close"></use>
+    </svg>
+  </button>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+    <svg class="mobile-menu__toggle" width="40" height="40">
+      <use href="./images/icons.svg#icon-menu-close"></use>
+    </svg>      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
+  <div class="mobile-menu__wrapper">
+    <p>Paragraph</p>
+    <div class="mobile-menu__social">
+      <p>Instagram</p>
+      <p>Twitter</p>
+      <p>Facebook</p>
+      <p>LinkedIn</p>
+    </div>
+</div>
+</div> -->
+
+    <!-- ========================= MOBILE MENU END ========================= -->
+
+
     <main>
-      <!-- ========================= BANNER ========================= -->
+    <!-- ========================= BANNER ========================= -->
 
       <div class="container banner column">
         <h1 class="banner__text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
@@ -73,10 +118,10 @@
         </button>
       </div>
 
-      <!-- ========================= BANNER END ========================= -->
+    <!-- ========================= BANNER END ========================= -->
 
       <section class="section">
-        <!-- ========================= LOREM ========================= -->
+    <!-- ========================= LOREM ========================= -->
 
         <div class="container">
           <ul class="list lorem-list">
@@ -139,9 +184,9 @@
           </ul>
         </div>
 
-        <!-- ========================= LOREM END ========================= -->
+    <!-- ========================= LOREM END ========================= -->
 
-        <!-- ========================= JOBS ========================= -->
+    <!-- ========================= JOBS ========================= -->
 
         <div class="container jobs-desktop column">
           <h2 class="main-header">Czym się zajmujemy</h2>
@@ -173,11 +218,11 @@
         </div>
       </section>
 
-      <!-- ========================= JOBS END ========================= -->
+  <!-- ========================= JOBS END ========================= -->
 
-      <!-- ========================= TEAM ========================= -->
+  <!-- ========================= TEAM ========================= -->
 
-      <!-- <section class="section index-team-container">
+      <section class="section index-team-container">
         <div class="container column">
           <h2 class="main-header">Nasz zespół</h2>
           <ul class="team-gap list">
@@ -431,63 +476,63 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- ========================= TEAM END ========================= -->
+    <!-- ========================= TEAM END ========================= -->
 
-      <!-- ========================= CLIENTS ========================= -->
+    <!-- ========================= CLIENTS ========================= -->
 
-      <!-- <section class="section">
+      <section class="section">
         <div class="container column">
           <h2 class="main-header">Nasi klienci</h2>
           <ul class="clients">
             <li>
               <a class="clients__link" href="#">
-                <svg class="clients__icon" width="170" height="92">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg#icon-index-client-first"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="clients__link" href="#">
-                <svg class="clients__icon" width="170" height="92">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg#icon-index-client-second"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="clients__link" href="#">
-                <svg class="clients__icon" width="170" height="92">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg#icon-index-client-third"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="clients__link" href="#">
-                <svg class="clients__icon" width="170" height="92">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg#icon-index-client-fourth"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="clients__link" href="#">
-                <svg class="clients__icon" width="170" height="92">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg#icon-index-client-fifth"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="clients__link" href="#">
-                <svg class="clients__icon" width="170" height="92">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg#icon-index-client-sixth"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- ========================= CLIENTS END ========================= -->
+    <!-- ========================= CLIENTS END ========================= -->
     </main>
 
     <!-- ========================= FOOTER ========================= -->
@@ -683,5 +728,12 @@
     <!-- ========================= MODAL END ========================= -->
 
     <script src="./js/modal.js"></script>
+<!-- <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>   -->
   </body>
 </html>
