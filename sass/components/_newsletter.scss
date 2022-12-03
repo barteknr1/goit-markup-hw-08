@@ -1,8 +1,11 @@
 .newsletter {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
+    align-items: center;
 
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
 
     &__header {
         text-transform: uppercase;
@@ -13,6 +16,8 @@
 
     &__form {
         display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     &__input {
@@ -23,11 +28,19 @@
         border-radius: 4px;
         padding: 16px 15px;
         background-color: transparent;
+
+        @media screen and (min-width: 480px) and (max-width: 1199px) {
+            max-width: 450px;
+
+        }
     }
 
     &__button {
-        margin-left: 12px;
         padding: 10px 28px 10px 42px;
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 12px;
+        }
     }
 
     &__icon {

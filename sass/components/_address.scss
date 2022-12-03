@@ -4,7 +4,12 @@
 
 
     &__margin {
-        margin: 9px 0;
+        margin: 8px 0;
+
+        @media screen and (min-width: 1200px) {
+            margin: 9px 0;
+        }
+
     }
 
     &__link {

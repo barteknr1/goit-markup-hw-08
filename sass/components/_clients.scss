@@ -5,6 +5,20 @@
     flex-wrap: wrap;
     gap: 30px;
 
+    &__item {
+        display: flex;
+        justify-content: center;
+        flex-basis: calc((100% - 30px) / 2);
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 60px) / 3);
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: auto
+        }
+    }
+
     &__link {
         text-decoration: none;
         color: var(--socials__link-color);
@@ -22,14 +36,16 @@
         }
     }
 
+
     &__icon {
         border: 1px solid var(--socials__link-color);
         border-radius: 4px;
         gap: 30px;
         --color1: currentColor;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        width: 210px;
+        max-width: 210px;
         height: 92px;
+        display: block;
 
         @media screen and (min-width: 768px) {
             width: 226px;
