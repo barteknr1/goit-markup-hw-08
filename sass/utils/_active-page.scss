@@ -2,14 +2,15 @@
     position: relative;
     color: var(--blue);
 
-    &::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: var(--blue);
-        top: 46px;
-        left: 0;
-    }
+}
+
+.active-bar::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--blue);
+    top: 46px;
+    left: 0;
 }

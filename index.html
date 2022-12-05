@@ -23,7 +23,7 @@
     <!-- ========================= HEADER ========================= -->
 
     <header class="border-bottom">
-      <div class="header-container">
+      <div class="container header-container">
         <nav class="header-container__nav">
           <a class="logo link" href="./index.html"
             ><span class="logo__web">Web</span
@@ -31,7 +31,7 @@
           >
           <ul class="list menu">
             <li>
-              <a class="link menu__link active-page" href="./index.html"
+              <a class="link menu__link active-page active-bar" href="./index.html"
                 >Agencja</a
               >
             </li>
@@ -59,54 +59,29 @@
             >
           </li>
         </ul>
-        <div class="mobile-button">
-          <button class="mobile-button__open js-open-menu" type="button" aria-expanded="false"
-          aria-controls="mobile-menu">
-            <svg width="40" height="40">
-              <use class="mobile-button__icon" href="./images/icons.svg#icon-menu-open"></use>
-            </svg>
-          </button>
-        </div>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
 
     <!-- ========================= HEADER END ========================= -->
-
-    <!-- ========================= MOBILE MENU ========================= -->
-
-<!-- <div class="mobile-menu js-menu-container" id="mobile-menu">
-  <button class="mobile-menu__button">
-    <svg class="mobile-menu__toggle js-close-menu" width="40" height="40">
-      <use href="./images/icons.svg#icon-menu-close"></use>
-    </svg>
-  </button>
-
-      <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-    <svg class="mobile-menu__toggle" width="40" height="40">
-      <use href="./images/icons.svg#icon-menu-close"></use>
-    </svg>      </button>
-
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
-    </div>
-  <div class="mobile-menu__wrapper">
-    <p>Paragraph</p>
-    <div class="mobile-menu__social">
-      <p>Instagram</p>
-      <p>Twitter</p>
-      <p>Facebook</p>
-      <p>LinkedIn</p>
-    </div>
-  </div>
-</div> -->
-
-    <!-- ========================= MOBILE MENU END ========================= -->
-
 
     <main>
     <!-- ========================= BANNER ========================= -->
@@ -228,8 +203,7 @@
           <ul class="team-gap list">
             <li class="member-card">
                 <figure>
-                  <img src=images/index-team-productdesigner.jpg width="270"
-                  height="260" alt="Product Designer">
+                  <img src="images/index-team-productdesigner-mobile.jpg" alt="Product Designer">
                   <div class="member-card__descritpion">
                     <p class="member-card__caption">John Doe</p>
                     <p class="member-card__caption-gray">Product Designer</p>
@@ -288,8 +262,7 @@
             </li>
             <li class="member-card">
                 <figure>
-                  <img src=images/index-team-frontend.jpg width="270"
-                  height="260" alt="Frontend developer">
+                  <img src="./images/index-team-frontend-mobile.jpg" alt="Frontend developer">
                   <div class="member-card__descritpion">
                     <p class="member-card__caption">John Doe</p>
                     <p class="member-card__caption-gray">Frontend developer</p>
@@ -348,8 +321,7 @@
             </li>
             <li class="member-card">
                 <figure>
-                  <img src=images/index-team-marketing.jpg width="270"
-                  height="260" alt="Marketing">
+                  <img src="./images/index-team-marketing-mobile.jpg" alt="Marketing">
                   <div class="member-card__descritpion">
                     <p class="member-card__caption">John Doe</p>
                     <p class="member-card__caption-gray">Marketing</p>
@@ -408,8 +380,7 @@
             </li>
             <li class="member-card">
                 <figure>
-                  <img src=images/index-team-uidesigner.jpg width="270"
-                  height="260" alt="UI Designer">
+                  <img src="./images/index-team-uidesigner-mobile.jpg" alt="UI Designer">
                   <div class="member-card__descritpion">
                     <p class="member-card__caption">John Doe</p>
                     <p class="member-card__caption-gray">UI Designer</p>
@@ -558,7 +529,7 @@
         </div>
         <div class="footer-social">
           <h4 class="footer-social__header">Dołącz do nas</h4>
-          <ul class="socials">
+          <ul class="socials socials--footer">
             <li>
               <a class="socials__link_footer" href="#">
                 <svg class="socials__icon" width="44" height="44">
@@ -717,13 +688,51 @@
 
     <!-- ========================= MODAL END ========================= -->
 
+    <!-- ========================= MOBILE MENU ========================= -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="mobile-menu__link link mobile-menu__active-page">Agencja</a></li>
+        <li><a href="" class="mobile-menu__link link">Portfolio</a></li>
+        <li><a href="" class="mobile-menu__link link">Kontakt</a></li>
+      </ul>
+      <ul class="mobile-contact">
+        <a class="mobile-contact__tel link" href="tel:+48111111111">+48 111 111 111</a>
+        <a class="mobile-contact__email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </ul>
+      <ul class="mobile-socials">
+        <li><a href="" class="mobile-socials__link mobile-socials__bar link">Instagram</a></li>
+        <li><a href="" class="mobile-socials__link mobile-socials__bar link">Twitter</a></li>
+        <li><a href="" class="mobile-socials__link mobile-socials__bar link">Facebook</a></li>
+        <li><a href="" class="mobile-socials__link link">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <!-- ========================= MOBILE MENU END ========================= -->
+
     <script src="./js/modal.js"></script>
-<!-- <script
+<script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>   -->
+    <script defer src="js/mobile-menu.js"></script>  
   </body>
 </html>

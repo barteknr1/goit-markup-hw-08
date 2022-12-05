@@ -1,12 +1,19 @@
 .footer-social {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 50%;
+        margin-bottom: 102px;
+    }
 
     @media screen and (min-width: 1200px) {
         margin-left: 70px;
+        margin-bottom: 0;
+        align-items: flex-start;
     }
 
     &__header {

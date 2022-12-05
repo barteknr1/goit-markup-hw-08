@@ -5,6 +5,9 @@
     justify-content: center;
     gap: 10px;
 
+    &--footer {
+        margin-top: 0
+    }
 
     &__link {
         color: var(--socials__link-color);
@@ -35,7 +38,6 @@
 
     &__link_footer {
         color: var(--white);
-
 
         &:visited {
             color: var(--white);
