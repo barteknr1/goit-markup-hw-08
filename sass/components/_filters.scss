@@ -3,6 +3,9 @@
     flex-direction: column;
     margin-bottom: 50px;
 
+    &__list{
+        display: flex;
+    }
     &__button {
         color: inherit;
         font-family: inherit;
