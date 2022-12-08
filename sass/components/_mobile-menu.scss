@@ -105,8 +105,7 @@
     gap: 10px;
     position: absolute;
     bottom: 48px;
-    // flex-wrap: wrap;
-    flex-shrink: 1;
+    flex-wrap: wrap;
 
     &__link {
         color: var(--blue);
