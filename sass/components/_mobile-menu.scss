@@ -1,124 +1,115 @@
 .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-
-    @media (min-width: 768px) {
-        & {
-            display: none;
-        }
-    }
-
-
-    &:hover,
-    &:focus {
-        background-color: rgba(0, 0, 0, 0.1);
-    }
+	min-height: 40px;
+	min-width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	border-radius: 50%;
+	outline: none;
+	@media (min-width: 768px) {
+		& {
+			display: none;
+		}
+	}
+	&:hover,
+	&:focus {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
 }
-
-
 .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 48px 40px;
-    background-color: #fff;
-    z-index: 999;
-
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
-
-
-    &.is-open {
-        transform: translateX(0);
-    }
-
-    & .menu-toggle {
-        position: absolute;
-        top: 16px;
-        right: 16px;
-        color: #212121;
-    }
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	padding: 48px 40px;
+	background-color: #fff;
+	z-index: 999;
+	transform: translateX(100%);
+	transition: transform 250ms ease-in-out;
+	&.is-open {
+		transform: translateX(0);
+	}
+	& .menu-toggle {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		color: #212121;
+	}
 }
-
 .mobile-menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-
-
-    &__link {
-        color: inherit;
-        display: inline-block;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.17em;
-        letter-spacing: 0.02em;
-    }
-
-    &__active-page {
-        color: var(--blue);
-    }
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	@media screen and (min-width: 768px) {
+		gap: 32px;
+	}
+	&__link {
+		color: inherit;
+		display: inline-block;
+		font-weight: 500;
+		font-size: 40px;
+		line-height: 1.17em;
+		letter-spacing: 0.02em;
+	}
+	&__active-page {
+		color: var(--blue);
+	}
 }
-
 .mobile-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    position: absolute;
-    bottom: 134px;
-
-    &__tel {
-        font-weight: 500;
-        font-size: 34px;
-        line-height: 1.18em;
-        letter-spacing: 0.02em;
-        color: var(--blue);
-    }
-
-    &__email {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 1.17em;
-        letter-spacing: 0.02em;
-        color: var(--lgray);
-    }
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	position: absolute;
+	bottom: 150px;
+	@media screen and (min-width: 768px) {
+		gap: 32px;
+		bottom: 134px;
+	}
+	&__tel {
+		font-weight: 500;
+		font-size: 34px;
+		line-height: 1.18em;
+		letter-spacing: 0.02em;
+		color: var(--blue);
+	}
+	&__email {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 1.17em;
+		letter-spacing: 0.02em;
+		color: var(--lgray);
+	}
 }
-
 .mobile-socials {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    position: absolute;
-    bottom: 48px;
-    flex-wrap: wrap;
-
-    &__link {
-        color: var(--blue);
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.22em;
-        letter-spacing: 0.02em;
-    }
-
-    &__bar::after {
-        content: "";
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        height: 22px;
-        margin-left: 10px;
-    }
+	list-style: none;
+	display: flex;
+	gap: 10px;
+	position: absolute;
+	bottom: 64px;
+	flex-wrap: wrap;
+	@media screen and (min-width: 768px) {
+		bottom: 48px;
+	}
+	&__link {
+		color: var(--blue);
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 1.22em;
+		letter-spacing: 0.02em;
+	}
+	&__bar::after {
+		content: "";
+		border: 1px solid rgba(33, 33, 33, 0.2);
+		height: 22px;
+		margin-left: 10px;
+	}
 }

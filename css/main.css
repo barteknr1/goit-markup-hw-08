@@ -114,7 +114,6 @@ body {
   left: 0;
   top: 0;
   -webkit-transition: 300ms;
-  -o-transition: 300ms;
   transition: 300ms;
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -143,7 +142,6 @@ body {
   line-height: 1.17em;
   letter-spacing: 0.02em;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -314,7 +312,6 @@ body {
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
-  -o-transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
@@ -341,7 +338,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 32px;
+  gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    gap: 32px;
+  }
 }
 .mobile-menu__link {
   color: inherit;
@@ -363,9 +365,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 32px;
+  gap: 16px;
   position: absolute;
-  bottom: 134px;
+  bottom: 150px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-contact {
+    gap: 32px;
+    bottom: 134px;
+  }
 }
 .mobile-contact__tel {
   font-weight: 500;
@@ -389,9 +397,14 @@ body {
   display: flex;
   gap: 10px;
   position: absolute;
-  bottom: 48px;
+  bottom: 64px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .mobile-socials {
+    bottom: 48px;
+  }
 }
 .mobile-socials__link {
   color: var(--blue);
@@ -493,7 +506,6 @@ body {
   text-decoration: none;
   color: var(--socials__link-color);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
@@ -509,7 +521,6 @@ body {
   gap: 30px;
   --color1: currentColor;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   max-width: 210px;
   height: 92px;
@@ -562,7 +573,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
@@ -576,14 +586,13 @@ body {
   max-width: 1600px;
   height: 400px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index-background-image-mobile.jpg);
-  background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index-background-image-mobile.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index-background-image-mobile.jpg);
   padding: 118px 0;
   margin: 0 auto;
   background-size: cover;
   background-position: center center;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .banner {
     background-image: url(../images/index-background-image-mobile@2x.jpg);
   }
@@ -591,11 +600,10 @@ body {
 @media screen and (min-width: 768px) {
   .banner {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index-background-image-tablet.jpg);
-    background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index-background-image-tablet.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index-background-image-tablet.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .banner {
     background-image: url(../images/index-background-image-tablet@2x.jpg);
   }
@@ -605,11 +613,10 @@ body {
     height: 600px;
     padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index-background-image.jpg);
-    background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index-background-image.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index-background-image.jpg);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .banner {
     background-image: url(../images/index-background-image@2x.jpg);
   }
@@ -664,7 +671,6 @@ body {
   padding: 6px 22px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -982,6 +988,11 @@ body {
           align-items: center;
   padding: 40px;
 }
+@media screen and (min-width: 768px) {
+  .modal__form {
+    padding: 40px;
+  }
+}
 .modal__close-button {
   position: absolute;
   width: 30px;
@@ -1034,8 +1045,13 @@ body {
   margin: 0;
   border: none;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .modal__fieldset {
+    margin-bottom: 20px;
+  }
 }
 .modal__input-name {
   font-size: 12px;
@@ -1058,7 +1074,6 @@ body {
   position: absolute;
   left: 12px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__input {
@@ -1069,11 +1084,10 @@ body {
   border-radius: 4px;
   padding-left: 42px;
   -webkit-transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__text {
-  height: 120px;
+  height: 100px;
   padding: 12px 16px;
   color: rgba(117, 117, 117, 0.5);
   font-weight: 400;
@@ -1083,6 +1097,11 @@ body {
   color: var(--lgray);
   resize: none;
 }
+@media screen and (min-width: 768px) {
+  .modal__text {
+    height: 120px;
+  }
+}
 .modal__input:focus {
   outline-color: var(--blue);
 }
@@ -1090,7 +1109,7 @@ body {
   fill: var(--blue);
 }
 .modal__agreement {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16em;
@@ -1104,6 +1123,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .modal__agreement {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal__agreement {
@@ -1121,7 +1145,6 @@ body {
   border: 1px solid var(--dgray);
   border-radius: 2px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__checkbox {
@@ -1250,7 +1273,6 @@ body {
   cursor: pointer;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1283,7 +1305,6 @@ body {
           transform: translatey(100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 49px 45px 49px 24px;
@@ -1343,7 +1364,6 @@ body {
   border-radius: 50%;
   background-color: var(--footer-icon-circle);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials__link_footer {
